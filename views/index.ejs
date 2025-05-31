@@ -1,0 +1,40 @@
+<header>
+    <h1><img src="jordan-icon.ico" alt="mj" width="50" height="50">Magazin sneakers</h1>
+</header>
+<% if(req!==undefined){ %>
+<h1> Bine ai venit, <%= req %>!</h1>
+<form method="POST" action="/delogare">
+<input type="submit" value="Log out">
+<% } %>
+</form>
+<a href="http://localhost:6789/autentificare"><span>A</span>utentificare</a>
+    <form method="GET" action="/chestionar">
+     <input type="submit" value="Chestionar">
+    </form>
+    <form method="GET" action="/creare-bd">
+    <input type="submit" value="Creare BD">
+    </form>
+    <form method="GET" action="/inserare-bd">
+     <input type="submit" value="Încarcare BD">
+    </form>
+    <% if(req!==undefined){ %>
+    </form>
+    <form method="GET" action="/vizualizare-cos">
+     <input type="submit" value="Vizualizare cos">
+    </form>
+    <% } %>
+    <img src="mj.jpg" alt="mj" width="250" height="250">
+    <ul>
+    <% for (let i in produse) { %>
+        <li class="first"> <b><%= produse[i].nume %></b> <br> la <%= produse[i].pret %>$ <br> doar <%= produse[i].stoc %> ramase în stoc!</li>
+         <% if(req!==undefined){ %>
+        <form method="POST" action="/adaugare-cos">
+         <input type="hidden" name="id" value= <%= i %> >
+        <input type="submit" value="Adaugă în coș">
+        </form>
+        <% } %>
+        <% } %>
+    </ul>
+<footer>
+    <p>&copy; 2025 Magazin sneakers</p>
+</footer>

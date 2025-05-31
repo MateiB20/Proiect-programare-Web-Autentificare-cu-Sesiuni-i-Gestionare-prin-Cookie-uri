@@ -1,0 +1,49 @@
+body
+{
+    background: linear-gradient(to right, black, red);
+    color:red;
+}
+h1
+{
+    color:white;
+}
+input[type="submit"]
+{
+    background-color:lightcoral;
+}
+input[type="submit"]:hover
+{
+    background-color:white;
+}
+p::first-letter
+{
+    color:white;
+}
+li.first::first-letter
+{
+    color:white;
+}
+input:focus {
+    background-color: lightcoral;
+}
+a
+{
+    color:lightcoral;
+}
+a span
+{
+    color:white;
+}
+label span
+{
+    color:white;
+}
+a:hover
+{
+   color: lightcoral;
+}
+#eroare
+{
+    color:red;
+}
+  

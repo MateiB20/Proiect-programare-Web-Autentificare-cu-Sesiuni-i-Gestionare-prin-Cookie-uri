@@ -1,0 +1,23 @@
+<header>
+    <h1><img src="jordan-icon.ico" alt="mj" width="50" height="50">Magazin sneakers-Autentificare</h1>
+</header>
+<% if(reqAuth!==undefined){ %>
+    <h1> Autentificat ca <%= reqAuth %>!</h1>
+<form method="POST" action="/delogare">
+<input type="submit" value="Log out">
+    <% } %>
+</form>
+<form id="inregistreaza" method="POST" action="/verificare-autentificare">
+    <p> Înregistrare:</p>
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="uname" placeholder="XIonGamingX"><br>
+    <label for="passwd">Parola:</label>
+    <input type="password" id="passwd" name="passwd" placeholder="&#42;&#42;&#42;&#42;&#42;&#42;&#42;"><br>
+    <input type="submit" value="Înregistrează">
+  </form>
+  <% if(req!==undefined && req!==""){ %>
+    <h1 id="eroare"> <%= req %>!</h1>
+    <% } %>
+<footer>
+    <p>&copy; 2025 Magazin sneakers-Autentificare</p>
+</footer>

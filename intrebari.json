@@ -1,0 +1,47 @@
+[
+    {
+    "intrebare": "Logo-ul cărei mărcii prezintă trei dungi orizontale?",             
+    "variante": ["Adidas", "Nike", "Puma", "Under Armour"],             
+    "corect": 0         },         
+    {
+        "intrebare": "Care au fost primii adidași lansați de Nike?",             
+        "variante": ["Air Jordan 1", "Cortez", "Air Max 1", "Blazer"],             
+        "corect": 1         },
+        {
+            "intrebare": "Care companie a fost prima care a semnat un acord cu Michael Jordan, care a condus la emblematicii adidași Air Jordan?",             
+            "variante": ["Puma", "Adidas", "Nike", "Reebok"],             
+            "corect": 2        },
+        {
+            "intrebare": "Care dintre următoarele a fost primul brand care a introdus adidași special concepuți pentru alergare?",             
+            "variante": ["Reebok", "Nike", "Puma", "Adidas"],             
+            "corect": 3        },
+        {
+            "intrebare": "Care companie a fost prima care a lansat o linie de adidași cu tehnologie de amortizare a aerului în talpă?",             
+            "variante": ["Nike", "Reebok", "Adidas", "New Balance"],             
+            "corect": 0        },
+            {
+                "intrebare": "Care dintre următoarele branduri este cunoscut pentru produsele sale inspirate de skateboarding?",
+                "variante": ["Nike", "Vans", "Puma", "Reebok"],
+                "corect": 1
+            },
+            {
+                "intrebare": "Care brand sportiv a semnat un contract cu LeBron James pentru prima dată în 2003?",
+                "variante": ["Puma", "Adidas", "Nike", "Reebok"],
+                "corect": 2
+            },
+            {
+                "intrebare": "Ce brand a creat modelul iconic de adidași 'Chuck Taylor'?",
+                "variante": ["Nike", "Adidas", "Puma", "Converse"],
+                "corect": 3
+            },
+            {
+                "intrebare": "Care brand a semnat un contract de sponsorizare cu sportivul Usain Bolt?",
+                "variante": ["Puma", "Nike", "Adidas", "Reebok"],
+                "corect": 0
+            },
+            {
+                "intrebare": "Ce companie a creat celebra linie de adidași 'Suede'?",
+                "variante": ["Nike", "Puma", "Adidas", "Reebok"],
+                "corect": 1
+            }
+]

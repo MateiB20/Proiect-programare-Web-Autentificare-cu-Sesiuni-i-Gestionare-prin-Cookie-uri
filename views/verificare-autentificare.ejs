@@ -1,0 +1,19 @@
+<header>
+    <h1><img src="jordan-icon.ico" alt="mj" width="50" height="50">Magazin sneakers-Autentificare</h1>
+</header>
+<% if(reqAuth!==undefined){ %>
+    <h1>  Autentificat ca <%= reqAuth %>!</h1>
+    <% } %>
+    <form method="POST" action="/delogare">
+        <input type="submit" value="Log out">
+        </form>
+<ul>
+        <% for (let key in req) { %>
+            <% if (req.hasOwnProperty(key)) { %>
+                <li><%= key %>: <%= req[key] %></li>
+            <% } %>
+        <% } %>
+</ul>
+<footer>
+    <p>&copy; 2025 Magazin sneakers-Autentificare</p>
+</footer>

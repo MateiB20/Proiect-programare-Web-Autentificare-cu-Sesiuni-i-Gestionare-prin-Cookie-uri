@@ -1,0 +1,39 @@
+<% var nr=10 %>
+<header>
+    <h1><img src="jordan-icon.ico" alt="mj" width="50" height="50">Magazin sneakers-Chestionar</h1>
+</header>
+<% if(reqAuth!==undefined){ %>
+    <h1> Autentificat ca <%= reqAuth %>!</h1>
+    <% } %>
+    <form method="POST" action="/delogare">
+        <input type="submit" value="Log out">
+        </form>
+    <% for (let i = 0; i < intrebari.length; i++) { %>
+        <p><%= i + 1 %>. <%= intrebari[i].intrebare %></p>
+        <% var ok=0 %>
+        <ul>
+        <% for (let j = 0; j < intrebari[i].variante.length; j++) { %>
+            <% if(j==intrebari[i].corect){ %>
+                <li style="color:green"><%= intrebari[i].variante[j] %></li>
+            <% } else { %>
+                <% var answer=req[i.toString()] %>
+                <% if (typeof req[i.toString()] === 'undefined' || req[i.toString()] === null) { %>
+                    <li style="color:white"><%= intrebari[i].variante[j] %></li>
+                    <% ok=1 %>
+                <% } else if(answer==j && j!=intrebari[i].corect){ %>
+                    <li style="color:red"><%= intrebari[i].variante[j] %></li>  
+                    <% nr-- %>
+                <% } else { %>
+                    <li style="color:white"><%= intrebari[i].variante[j] %></li>
+                    <% } %>
+            <% } %>
+         <% } %>
+        </ul>
+         <% if(ok==1){ %>
+             <% nr-- %>
+             <% } %>
+    <% } %>
+<h1> <%= nr %>/10 </h1>
+<footer>
+    <p>&copy; 2025 Magazin sneakers-Chestionar</p>
+</footer>
