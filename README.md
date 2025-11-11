@@ -1,4 +1,4 @@
-Acest proiect presupune crearea unei aplicații web simple care include două funcționalități principale:
+Acest proiect presupune crearea unei aplicații web simple care include funcționalități ca:
 * Simularea unui sistem de logare pentru utilizatori.
 * Simularea unui coș de cumpărături.
 * Control acces.
